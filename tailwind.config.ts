@@ -13,7 +13,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Plus Jakarta Sans", "Inter", "sans-serif"],
+        display: ["Poppins", "Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -52,14 +52,16 @@ export const Navbar = () => {
       transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-300",
-        scrolled ? "py-2" : "py-4"
+        scrolled ? "py-2" : "py-5"
       )}
     >
       <div className="container-px">
         <nav
           className={cn(
             "mx-auto flex items-center justify-between rounded-2xl transition-all duration-300",
-            scrolled ? "glass shadow-soft px-4 md:px-6 py-2" : "bg-transparent px-4 md:px-6 py-3"
+            scrolled
+              ? "glass shadow-soft px-5 md:px-8 py-3"
+              : "bg-transparent px-5 md:px-8 py-4"
           )}
         >
           <button
@@ -70,17 +72,16 @@ export const Navbar = () => {
             <img
               src={logo}
               alt="Nirmal Dental Labs"
-              width={180}
-              height={48}
+              width={248}
+              height={82}
               className={cn(
-                "object-contain transition-all duration-300 group-hover:scale-105",
-                scrolled ? "h-8 md:h-9" : "h-9 md:h-11",
-                ""
+                "object-contain transition-all duration-300 group-hover:scale-105 rounded-xl",
+                scrolled ? "h-12 md:h-14" : "h-14 md:h-[4.25rem]"
               )}
             />
           </button>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-2">
             {links.map((link) => {
               const isActive = active === link.href;
               return (
@@ -88,7 +89,7 @@ export const Navbar = () => {
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
                   className={cn(
-                    "relative px-4 py-2 text-sm font-medium transition-colors story-link",
+                    "relative px-4 py-2 text-sm font-semibold transition-colors story-link",
                     isActive ? "text-primary" : "text-foreground/80 hover:text-primary"
                   )}
                 >
@@ -120,6 +121,7 @@ export const Navbar = () => {
                   animate={{ rotate: 0, opacity: 1 }}
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
+        
                 >
                   {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
                 </motion.span>
@@ -128,7 +130,7 @@ export const Navbar = () => {
 
             <Button
               onClick={() => scrollTo("#booking")}
-              className="hidden sm:inline-flex bg-medical hover:bg-medical/90 text-medical-foreground rounded-xl shadow-medical hover:shadow-glow transition-all hover:scale-105"
+              className="hidden sm:inline-flex btn-glow bg-medical hover:bg-medical/90 text-medical-foreground rounded-xl shadow-medical hover:shadow-glow transition-all hover:scale-105 px-6"
             >
               Book a Visit
             </Button>

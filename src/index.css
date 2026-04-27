@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -27,7 +27,7 @@
     --secondary-foreground: 215 30% 14%;
 
     --muted: 210 30% 96%;
-    --muted-foreground: 215 16% 45%;
+    --muted-foreground: 215 18% 38%;
 
     --accent: 199 95% 60%;
     --accent-foreground: 0 0% 100%;
@@ -86,7 +86,7 @@
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217 30% 14%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 22% 72%;
 
     --accent: 211 96% 50%;
     --accent-foreground: 0 0% 100%;
@@ -131,7 +131,7 @@
     font-feature-settings: 'cv11', 'ss01';
   }
   h1, h2, h3, h4, h5 {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-family: 'Poppins', 'Inter', sans-serif;
     @apply tracking-tight;
   }
 }
@@ -173,6 +173,26 @@
   .focus-medical:focus {
     box-shadow: 0 0 0 3px hsl(var(--medical) / 0.25);
     border-color: hsl(var(--medical));
+  }
+  .btn-glow {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .btn-glow::after {
+    content: "";
+    position: absolute;
+    inset: -120% auto auto -40%;
+    width: 36%;
+    height: 320%;
+    transform: rotate(18deg) translateX(-260%);
+    background: linear-gradient(90deg, transparent, hsl(var(--medical-glow) / 0.36), transparent);
+    transition: transform 0.55s var(--ease-smooth);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .btn-glow:hover::after {
+    transform: rotate(18deg) translateX(430%);
   }
 }
 

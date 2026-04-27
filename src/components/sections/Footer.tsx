@@ -40,8 +40,8 @@ export const Footer = () => {
         <div className="absolute -top-1/2 -right-1/4 w-[600px] h-[600px] rounded-full bg-primary blur-3xl" />
       </div>
 
-      <div className="container-px container relative z-10 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div className="container-px container relative z-10 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
           <div>
             <div className="mb-5">
               <img
@@ -49,21 +49,21 @@ export const Footer = () => {
                 alt="Nirmal Dental Labs"
                 width={200}
                 height={50}
-                className="h-10 w-auto object-contain bg-white/90 rounded-lg p-2"
+                className="h-14 w-auto object-contain bg-white/95 rounded-xl p-2.5 shadow-soft"
               />
             </div>
             <p className="text-sm text-background/70 leading-relaxed mb-5">
               A premium prosthodontist-led dental laboratory delivering precision restorations across India.
             </p>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               {[Linkedin, Instagram, Facebook, Twitter].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
                   aria-label="Social link"
-                  className="w-10 h-10 rounded-xl bg-background/10 hover:bg-gradient-primary flex items-center justify-center transition-all hover:scale-110"
+                  className="w-11 h-11 rounded-xl bg-background/10 border border-background/20 hover:bg-gradient-primary hover:border-transparent flex items-center justify-center transition-all hover:scale-110"
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
@@ -77,7 +77,7 @@ export const Footer = () => {
                   <li key={l.label}>
                     <a
                       href={l.href}
-                      className="text-sm text-background/70 hover:text-medical-glow transition-all inline-flex items-center hover:translate-x-1"
+                      className="text-sm text-background/80 hover:text-medical-glow transition-all inline-flex items-center hover:translate-x-1"
                     >
                       {l.label}
                     </a>

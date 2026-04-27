@@ -10,14 +10,14 @@ const items = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["+91 90900 73232"],
-    href: "tel:+919090073232",
+    lines: ["+91 912345678"],
+    href: "tel:+91912345678",
   },
   {
     icon: Mail,
     title: "Email Us",
-    lines: ["info@smileworkslab.com"],
-    href: "mailto:info@smileworkslab.com",
+    lines: ["info@dummy.com"],
+    href: "mailto:info@dummy.com",
   },
   {
     icon: Clock,
@@ -83,7 +83,7 @@ export const Contact = () => {
           >
             <iframe
               title="Nirmal Dental Labs on Google Maps"
-              src="https://www.google.com/maps/search/B+377,+Mangolpuri+Industrial+Area,+Phase+1,+New+Delhi,+110034.+map/@28.6865862,77.0781342,15z?output=embed"
+              src="https://www.google.com/maps/search/nirmal+dental+labs/@23.0190762,74.9707031,6z?output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 400 }}
