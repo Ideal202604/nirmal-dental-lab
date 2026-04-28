@@ -60,8 +60,8 @@ export const Navbar = () => {
           className={cn(
             "w-full flex items-center rounded-2xl transition-all duration-300",
             scrolled
-              ? "glass shadow-soft pl-4 pr-6 md:pl-6 md:pr-10 py-3"
-              : "bg-transparent pl-4 pr-6 md:pl-6 md:pr-10 py-4"
+              ? "glass shadow-soft pl-2 pr-5 md:pl-4 md:pr-8 py-3"
+              : "bg-transparent pl-2 pr-5 md:pl-4 md:pr-8 py-4"
           )}
         >
           <div className="flex items-center gap-2 mr-auto">

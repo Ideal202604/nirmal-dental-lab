@@ -91,16 +91,15 @@ export const Products = () => {
 
         <div
           ref={gridRef}
-          className="grid gap-8"
-          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}
+          className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
         >
           {products.map((p) => (
             <article
               key={p.title}
               data-product-card
-              className="group relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2"
+              className="group relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2 h-full flex flex-col"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+              <div className="relative aspect-[4/3] overflow-hidden bg-secondary shrink-0">
                 <img
                   src={p.img}
                   alt={p.title}
@@ -115,7 +114,7 @@ export const Products = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col min-h-[140px]">
                 <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
                   {p.title}
                 </h3>
