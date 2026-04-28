@@ -129,6 +129,10 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     font-feature-settings: 'cv11', 'ss01';
+    overflow-x: hidden;
+  }
+  #root {
+    overflow-x: hidden;
   }
   h1, h2, h3, h4, h5 {
     font-family: 'Poppins', 'Inter', sans-serif;
@@ -155,6 +159,11 @@
   .container-px {
     @apply px-4 sm:px-6 lg:px-8;
   }
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
 }
 
 @layer utilities {

@@ -64,11 +64,6 @@ export const Team = () => {
                   loading="lazy"
                   className="w-full h-full object-cover object-top group-hover:scale-[1.06] transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
-                <div
-                  className="absolute inset-y-0 right-0 w-8 opacity-60 group-hover:opacity-95 transition-opacity"
-                  style={{ boxShadow: "-15px 0 30px rgba(255, 215, 0, 0.65)" }}
-                />
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   <a href="#" className="w-9 h-9 rounded-full glass flex items-center justify-center hover:bg-medical hover:text-medical-foreground transition-all" aria-label="LinkedIn">
                     <Linkedin className="w-4 h-4" />

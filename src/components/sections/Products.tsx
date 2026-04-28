@@ -108,7 +108,6 @@ export const Products = () => {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500 ease-smooth"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/20 to-transparent dark:from-black/70 dark:via-black/20 opacity-60 transition-opacity duration-500" />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-black/70 text-white backdrop-blur-sm border border-white/15 shadow-medical">
                     {p.tag}
@@ -116,10 +115,10 @@ export const Products = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-display text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
                   {p.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-foreground/80 text-sm leading-relaxed">{p.desc}</p>
               </div>
             </article>
           ))}
