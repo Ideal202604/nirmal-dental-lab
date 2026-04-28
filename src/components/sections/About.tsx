@@ -50,21 +50,21 @@ export const About = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary-soft text-primary text-sm font-semibold mb-4">
               Our Vision
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="font-display text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight max-w-2xl break-words">
               Redefining dental lab services through{" "}
               <span className="gradient-text">precision and care</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-8 max-w-2xl">
               We aim to redefine dental lab services by combining clinical expertise with
               the latest in digital dentistry. Every restoration we craft is tailored to
               the patient — backed by science, perfected through artistry.
             </p>
 
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-3 mb-8 max-w-2xl">
               {points.map((p) => (
-                <li key={p} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                  <span className="text-foreground/80">{p}</span>
+                <li key={p} className="flex items-start gap-3 min-w-0">
+                  <CheckCircle2 className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <span className="text-foreground/80 leading-7 break-words">{p}</span>
                 </li>
               ))}
             </ul>
@@ -72,7 +72,7 @@ export const About = () => {
             <Button
               size="lg"
               onClick={scroll}
-              className="bg-gradient-primary text-primary-foreground rounded-xl shadow-soft hover:shadow-glow group h-12 px-7"
+              className="w-full sm:w-auto max-w-xl bg-gradient-primary text-primary-foreground rounded-xl shadow-soft hover:shadow-glow group px-7 py-4 whitespace-normal text-center"
             >
               Let's partner to create healthier, more confident smiles
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

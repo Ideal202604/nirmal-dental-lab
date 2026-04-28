@@ -154,7 +154,7 @@
     -webkit-text-fill-color: transparent;
   }
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-16 md:py-20;
   }
   .container-px {
     @apply px-4 sm:px-6 lg:px-8;
