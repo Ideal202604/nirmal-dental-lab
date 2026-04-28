@@ -58,13 +58,13 @@ export const Navbar = () => {
       <div className="container-px">
         <nav
           className={cn(
-            "w-full flex items-center justify-between rounded-2xl transition-all duration-300",
+            "w-full flex items-center rounded-2xl transition-all duration-300",
             scrolled
-              ? "glass shadow-soft pl-2 pr-5 md:pl-4 md:pr-8 py-3"
-              : "bg-transparent pl-2 pr-5 md:pl-4 md:pr-8 py-4"
+              ? "glass shadow-soft py-3"
+              : "bg-transparent py-4"
           )}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-1">
             <button
               onClick={() => scrollTo("#home")}
               className="flex items-center gap-2 group"
@@ -108,7 +108,7 @@ export const Navbar = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-1 justify-end">
             <Button
               size="icon"
               variant="ghost"

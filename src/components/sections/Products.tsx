@@ -114,11 +114,13 @@ export const Products = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-6 flex flex-col min-h-[140px]">
-                <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-                  {p.title}
-                </h3>
-                <p className="text-foreground text-sm leading-relaxed">{p.desc}</p>
+              <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+                <div>
+                  <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                    {p.title}
+                  </h3>
+                  <p className="text-foreground text-sm leading-relaxed">{p.desc}</p>
+                </div>
               </div>
             </article>
           ))}
