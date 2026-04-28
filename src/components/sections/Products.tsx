@@ -91,7 +91,7 @@ export const Products = () => {
 
         <div
           ref={gridRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
         >
           {products.map((p) => (
             <article
@@ -99,7 +99,7 @@ export const Products = () => {
               data-product-card
               className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-elegant transition-transform duration-300 hover:scale-[1.03] border border-border/60 flex flex-col h-full"
             >
-              <div className="w-full h-52 overflow-hidden bg-secondary">
+              <div className="w-full h-56 overflow-hidden bg-secondary">
                 <img
                   src={p.img}
                   alt={p.title}
