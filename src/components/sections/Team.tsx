@@ -54,14 +54,14 @@ export const Team = () => {
                   {m.exp}
                 </span>
               </div>
-              <div className="w-full h-[220px] overflow-hidden bg-secondary relative">
+              <div className="w-full h-[280px] overflow-hidden bg-secondary relative rounded-t-xl">
                 <img
                   src={m.img}
                   alt={m.name}
                   width={1365}
                   height={2048}
                   loading="lazy"
-                  className="w-full h-full object-cover rounded-t-xl group-hover:scale-[1.03] transition-transform duration-700"
+                  className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1 justify-between gap-4 pt-6">
