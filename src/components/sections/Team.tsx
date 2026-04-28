@@ -47,9 +47,14 @@ export const Team = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
               whileHover={{ y: -8 }}
-              className="group bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 border border-border/60 h-full flex flex-col"
+              className="group bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 border border-border/60 h-full flex flex-col relative"
             >
-              <div className="w-full h-[320px] overflow-hidden bg-secondary">
+              <div className="absolute top-3 right-3 z-10">
+                <span className="text-xs px-3 py-1 rounded-full bg-primary-soft text-primary font-semibold shadow-sm">
+                  {m.exp}
+                </span>
+              </div>
+              <div className="w-full h-[220px] overflow-hidden bg-secondary relative">
                 <img
                   src={m.img}
                   alt={m.name}
@@ -59,13 +64,10 @@ export const Team = () => {
                   className="w-full h-full object-cover rounded-t-xl group-hover:scale-[1.03] transition-transform duration-700"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-1 justify-between">
+              <div className="p-6 flex flex-col flex-1 justify-between gap-4 pt-6">
                 <div>
-                  <div className="flex items-center justify-between gap-3 mb-3 flex-wrap">
+                  <div className="mb-3">
                     <h3 className="font-display text-2xl font-bold">{m.name}</h3>
-                    <span className="text-xs px-3 py-1 rounded-full bg-primary-soft text-primary font-semibold">
-                      {m.exp}
-                    </span>
                   </div>
                   <div className="text-primary font-semibold mb-2">{m.role}</div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

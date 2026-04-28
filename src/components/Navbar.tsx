@@ -55,16 +55,16 @@ export const Navbar = () => {
         scrolled ? "py-2" : "py-5"
       )}
     >
-      <div className="container-px">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav
           className={cn(
-            "w-full flex items-center rounded-2xl transition-all duration-300",
+            "w-full flex items-center justify-between gap-6 rounded-2xl transition-all duration-300 min-h-[70px] flex-nowrap",
             scrolled
               ? "glass shadow-soft py-3"
               : "bg-transparent py-4"
           )}
         >
-          <div className="flex items-center gap-2 flex-1">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => scrollTo("#home")}
               className="flex items-center gap-2 group"
@@ -83,7 +83,7 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <div className="hidden md:flex flex-1 items-center justify-center gap-3">
+          <div className="hidden md:flex flex-1 items-center justify-center gap-6 whitespace-nowrap">
             {links.map((link) => {
               const isActive = active === link.href;
               return (
@@ -91,7 +91,7 @@ export const Navbar = () => {
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
                   className={cn(
-                    "relative px-4 py-2 text-sm font-semibold transition-colors story-link",
+                    "relative px-4 py-2 text-sm font-semibold transition-colors story-link whitespace-nowrap",
                     isActive ? "text-primary" : "text-foreground/80 hover:text-primary"
                   )}
                 >
@@ -108,7 +108,7 @@ export const Navbar = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-2 flex-1 justify-end">
+          <div className="flex items-center gap-2 justify-end">
             <Button
               size="icon"
               variant="ghost"
