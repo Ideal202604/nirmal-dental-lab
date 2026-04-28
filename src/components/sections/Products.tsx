@@ -97,7 +97,7 @@ export const Products = () => {
             <article
               key={p.title}
               data-product-card
-              className="group relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2"
+              className="group product-card relative shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                 <img
@@ -108,18 +108,13 @@ export const Products = () => {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500 ease-smooth"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/20 to-transparent dark:from-black/70 dark:via-black/20 opacity-60 transition-opacity duration-500" />
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-black/70 text-white backdrop-blur-sm border border-white/15 shadow-medical">
-                    {p.tag}
-                  </span>
+                <div className="product-tag">
+                  {p.tag}
                 </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {p.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+                <div className="product-content">
+                  <div className="product-title">{p.title}</div>
+                  <div className="product-desc">{p.desc}</div>
+                </div>
               </div>
             </article>
           ))}
