@@ -77,18 +77,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <div ref={textRef}>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6" data-hero-copy>
-              Restoring Smiles with{" "}
-              <span className="gradient-text">Precision</span> &{" "}
-              <span className="gradient-text">Innovation</span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed" data-hero-copy>
-              Empowering dental professionals with advanced prosthodontic solutions.
-            </p>
-
-            <motion.div
-              ref={ctaRef}
+            < ref={ctaRef}
               initial="hidden"
               animate="visible"
               variants={{
