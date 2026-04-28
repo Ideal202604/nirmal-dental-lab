@@ -47,8 +47,6 @@ export const Booking = () => {
     <section id="booking" className="section-padding relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-gradient-glow animate-float-slow" />
-        <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-72 h-72 rounded-[2rem] bg-white/10 border border-white/10 shadow-soft backdrop-blur-xl" />
-        <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-72 h-72 rounded-[2rem] bg-gradient-to-br from-primary/10 to-transparent shadow-soft backdrop-blur-xl" />
       </div>
 
       <div className="container-px container relative z-10">
