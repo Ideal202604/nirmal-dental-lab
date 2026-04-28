@@ -38,7 +38,7 @@ export const Team = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {team.map((m, i) => (
             <motion.div
               key={m.name}
@@ -54,7 +54,7 @@ export const Team = () => {
                   {m.exp}
                 </span>
               </div>
-              <div className="w-full h-[280px] overflow-hidden bg-secondary relative rounded-t-xl">
+              <div className="relative w-full aspect-[3/4] overflow-hidden bg-secondary rounded-t-xl">
                 <img
                   src={m.img}
                   alt={m.name}

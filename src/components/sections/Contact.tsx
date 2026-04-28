@@ -84,7 +84,7 @@ export const Contact = () => {
             <div className="relative w-full h-[460px] md:h-[520px] rounded-2xl overflow-hidden">
               <iframe
                 title="Idealizeer Content Solutions Map"
-                src="https://www.google.com/maps/place/City+Centre+-+Kolte+Patil/@18.5863779,73.738377,43m/data=!3m2!1e3!5s0x3bc2bbe7e2c41da1:0x594df244518af42f!4m14!1m7!3m6!1s0x3bc2bb00907081fd:0x5f1ba7f78fe527fe!2sIdealizeer+Content+Solutions+Private+Limited!8m2!3d18.5863645!4d73.738601!16s%2Fg%2F11h73lv553!3m5!1s0x3bc2bbe7af9b56b1:0x7c1c86b796e12483!8m2!3d18.5862546!4d73.7384931!16s%2Fg%2F11bw1_98rj?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.265934334429!2d73.73602417594358!3d18.58636936625438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb00907081fd%3A0x5f1ba7f78fe527fe!2sIdealizeer%20Content%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1714303881695!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: 16 }}
