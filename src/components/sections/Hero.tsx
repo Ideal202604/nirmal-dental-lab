@@ -65,7 +65,7 @@ export const Hero = () => {
     <section
       ref={sectionRef}
       id="home"
-      className="relative min-h-[78vh] lg:min-h-[86vh] flex items-center pt-24 pb-16 overflow-hidden bg-gradient-hero"
+      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-gradient-hero"
     >
       {/* Floating decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
