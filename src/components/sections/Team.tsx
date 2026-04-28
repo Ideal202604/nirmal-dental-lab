@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Award } from "lucide-react";
+import { Award } from "lucide-react";
 
 const team = [
   {
@@ -12,7 +12,10 @@ const team = [
   },
   {
     img: "https://res.cloudinary.com/duhhsnbwh/image/upload/v1777356110/chrome_DwleDcU1s0_a0atov.png",
-    name: "Mr. XYZ DEFnufacturing",
+    name: "Mr. XYZ DEF",
+    role: "COO",
+    exp: "20+ years",
+    creds: "Operations & Manufacturing",
     bio: "Scaling lab operations with rigorous quality systems and on-time delivery.",
   },
 ];
@@ -36,9 +39,6 @@ export const Team = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {team.map((m, i) => (
-            <motion.div
-              key={m.name}grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {team.map((m, i) => (
             <motion.div
               key={m.name}
@@ -73,4 +73,12 @@ export const Team = () => {
                     {m.creds}
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed">{m.bio}</p>
-                </div
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
