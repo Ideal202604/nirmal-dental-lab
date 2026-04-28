@@ -51,6 +51,7 @@ export const Products = () => {
     if (!gridRef.current) return;
     const cards = gridRef.current.querySelectorAll<HTMLElement>("[data-product-card]");
     const ctx = gsap.context(() => {
+      gsap.set(cards, { opacity: 1, y: 0, clearProps: "transform" });
       ScrollTrigger.batch(cards, {
         start: "top 85%",
         once: true,
@@ -118,7 +119,7 @@ export const Products = () => {
                 <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
                   {p.title}
                 </h3>
-                <p className="text-foreground/80 text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-foreground text-sm leading-relaxed">{p.desc}</p>
               </div>
             </article>
           ))}

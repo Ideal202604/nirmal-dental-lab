@@ -58,7 +58,7 @@ export const Navbar = () => {
       <div className="container-px">
         <nav
           className={cn(
-            "mx-auto flex items-center rounded-2xl transition-all duration-300",
+            "w-full flex items-center rounded-2xl transition-all duration-300",
             scrolled
               ? "glass shadow-soft pl-4 pr-6 md:pl-6 md:pr-10 py-3"
               : "bg-transparent pl-4 pr-6 md:pl-6 md:pr-10 py-4"
