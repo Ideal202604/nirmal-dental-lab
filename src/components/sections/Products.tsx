@@ -51,16 +51,17 @@ export const Products = () => {
     if (!gridRef.current) return;
     const cards = gridRef.current.querySelectorAll<HTMLElement>("[data-product-card]");
     const ctx = gsap.context(() => {
-      gsap.from(cards, {
-        opacity: 0,
-        y: 50,
-        duration: 0.7,
-        stagger: 0.12,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: gridRef.current,
-          start: "top 80%",
-          once: true,
+      ScrollTrigger.batch(cards, {
+        start: "top 85%",
+        once: true,
+        onEnter: (batch) => {
+          gsap.from(batch, {
+            opacity: 0,
+            y: 36,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: "power3.out",
+          });
         },
       });
     }, gridRef);
@@ -92,7 +93,7 @@ export const Products = () => {
             <article
               key={p.title}
               data-product-card
-              className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/50 hover:border-medical/50 hover:-translate-y-2"
+              className="group bg-white/95 rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                 <img

@@ -5,13 +5,13 @@ const items = [
   {
     icon: MapPin,
     title: "Visit Us",
-    lines: ["B 377, Mangolpuri Industrial Area", "Phase 1, New Delhi, 110034"],
+    lines: ["B 377, Xyz, New Delhi, 110034"],
   },
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["+91 912345678"],
-    href: "tel:+91912345678",
+    lines: ["+91 9123456789"],
+    href: "tel:+919123456789",
   },
   {
     icon: Mail,
