@@ -91,22 +91,22 @@ export const Products = () => {
 
         <div
           ref={gridRef}
-          className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {products.map((p) => (
             <article
               key={p.title}
               data-product-card
-              className="group relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2 h-full flex flex-col"
+              className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-elegant transition-transform duration-300 hover:scale-[1.03] border border-border/60 flex flex-col h-full"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-secondary shrink-0">
+              <div className="w-full h-52 overflow-hidden bg-secondary">
                 <img
                   src={p.img}
                   alt={p.title}
                   width={1000}
                   height={750}
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500 ease-smooth"
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-smooth"
                 />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-black/70 text-white backdrop-blur-sm border border-white/15 shadow-medical">
@@ -114,9 +114,9 @@ export const Products = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+              <div className="p-6 flex flex-col flex-1 justify-between">
                 <div>
-                  <h3 className="font-display text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="font-display text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
                     {p.title}
                   </h3>
                   <p className="text-foreground text-sm leading-relaxed">{p.desc}</p>

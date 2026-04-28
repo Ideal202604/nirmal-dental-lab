@@ -77,29 +77,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <div ref={textRef}>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 text-sm font-medium"
-              data-hero-copy
-            >
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span>Prosthodontist-Led Dental Lab</span>
-            </motion.div>
-
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6" data-hero-copy>
-              Restoring Smiles with{" "}
-              <span className="gradient-text">Precision</span> &{" "}
-              <span className="gradient-text">Innovation</span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed" data-hero-copy>
-              Empowering dental professionals with advanced prosthodontic solutions.
-            </p>
-
-            <motion.div
-              ref={ctaRef}
+            < ref={ctaRef}
               initial="hidden"
               animate="visible"
               variants={{
