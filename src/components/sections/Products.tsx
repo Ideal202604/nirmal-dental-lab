@@ -39,7 +39,7 @@ const products = [
   {
     img: "https://www.smileworkslab.com/assets/Occlusal%20Guards-CsK2v-VS.jpg",
     title: "Occlusal Guards",
-    tag: "Essential Care",
+    tag: "Protection",
     desc: "Hard and soft splints for bruxism and occlusal protection.",
   },
 ];
@@ -88,12 +88,16 @@ export const Products = () => {
           </p>
         </motion.div>
 
-        <div ref={gridRef} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          ref={gridRef}
+          className="grid gap-8"
+          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}
+        >
           {products.map((p) => (
             <article
               key={p.title}
               data-product-card
-              className="group bg-white/95 rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2"
+              className="group relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-[0_20px_55px_-22px_rgba(0,166,118,0.6)] transition-all duration-500 border border-border/60 hover:border-medical/60 hover:-translate-y-2"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                 <img
@@ -102,14 +106,14 @@ export const Products = () => {
                   width={1000}
                   height={750}
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-[1.12] transition-transform duration-700 ease-smooth"
+                  className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500 ease-smooth"
                 />
-                <div className="absolute top-4 left-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/20 to-transparent dark:from-black/70 dark:via-black/20 opacity-60 transition-opacity duration-500" />
+                <div className="absolute top-4 left-4 z-10">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-black/70 text-white backdrop-blur-sm border border-white/15 shadow-medical">
                     {p.tag}
                   </span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500" />
               </div>
               <div className="p-6">
                 <h3 className="font-display text-xl font-bold mb-2 group-hover:text-primary transition-colors">

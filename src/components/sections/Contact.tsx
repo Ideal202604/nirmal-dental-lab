@@ -79,18 +79,20 @@ export const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-3xl overflow-hidden shadow-elegant border border-border/50 min-h-[400px] relative"
+            className="rounded-3xl overflow-hidden shadow-elegant border border-border/50 bg-card/80 p-3"
           >
-            <iframe
-              title="Nirmal Dental Labs on Google Maps"
-              src="https://www.google.com/maps/search/nirmal+dental+labs/@23.0190762,74.9707031,6z?output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: 400 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="absolute inset-0 w-full h-full"
-            />
+            <div className="relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden">
+              <iframe
+                title="Nirmal Dental Labs on Google Maps"
+                src="https://www.google.com/maps?q=Nirmal+Dental+Implant+%26+Cosmetic+Center&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: 16 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
           </motion.div>
         </div>
       </div>

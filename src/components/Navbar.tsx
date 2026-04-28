@@ -58,30 +58,32 @@ export const Navbar = () => {
       <div className="container-px">
         <nav
           className={cn(
-            "mx-auto flex items-center justify-between rounded-2xl transition-all duration-300",
+            "mx-auto flex items-center rounded-2xl transition-all duration-300",
             scrolled
-              ? "glass shadow-soft px-5 md:px-8 py-3"
-              : "bg-transparent px-5 md:px-8 py-4"
+              ? "glass shadow-soft px-6 md:px-10 py-3"
+              : "bg-transparent px-6 md:px-10 py-4"
           )}
         >
-          <button
-            onClick={() => scrollTo("#home")}
-            className="flex items-center gap-2 group"
-            aria-label="Nirmal Dental Labs home"
-          >
-            <img
-              src={logo}
-              alt="Nirmal Dental Labs"
-              width={248}
-              height={82}
-              className={cn(
-                "object-contain transition-all duration-300 group-hover:scale-105 rounded-xl",
-                scrolled ? "h-12 md:h-14" : "h-14 md:h-[4.25rem]"
-              )}
-            />
-          </button>
+          <div className="flex items-center gap-2 mr-auto">
+            <button
+              onClick={() => scrollTo("#home")}
+              className="flex items-center gap-2 group"
+              aria-label="Nirmal Dental Labs home"
+            >
+              <img
+                src={logo}
+                alt="Nirmal Dental Labs"
+                width={248}
+                height={82}
+                className={cn(
+                  "object-contain transition-all duration-300 group-hover:scale-105 rounded-xl",
+                  scrolled ? "h-12 md:h-14" : "h-14 md:h-[4.25rem]"
+                )}
+              />
+            </button>
+          </div>
 
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex flex-1 items-center justify-center gap-3">
             {links.map((link) => {
               const isActive = active === link.href;
               return (
@@ -106,7 +108,7 @@ export const Navbar = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 ml-auto">
             <Button
               size="icon"
               variant="ghost"
