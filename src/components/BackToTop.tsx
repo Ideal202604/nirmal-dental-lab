@@ -23,7 +23,7 @@ export const BackToTop = () => {
           whileHover={{ scale: 1.1 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-28 right-4 md:right-6 z-40 w-12 h-12 rounded-full bg-gradient-primary text-primary-foreground shadow-elegant hover:shadow-glow flex items-center justify-center transition-shadow"
+          className="fixed bottom-24 right-4 md:right-6 z-40 w-12 h-12 rounded-full bg-gradient-primary text-primary-foreground shadow-elegant hover:shadow-glow flex items-center justify-center transition-shadow"
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>
