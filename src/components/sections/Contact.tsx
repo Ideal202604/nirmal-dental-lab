@@ -84,7 +84,7 @@ export const Contact = () => {
             <div className="relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden">
               <iframe
                 title="Nirmal Dental Labs on Google Maps"
-                src="https://www.google.com/maps?q=Nirmal+Dental+Implant+%26+Cosmetic+Center&output=embed"
+                src="https://www.google.com/maps/place/Idealizeer+Content+Solutions+Private+Limited/@18.5863645,73.7360261,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bb00907081fd:0x5f1ba7f78fe527fe!8m2!3d18.5863645!4d73.738601!16s%2Fg%2F11h73lv553?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: 16 }}
