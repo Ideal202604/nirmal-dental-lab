@@ -83,8 +83,8 @@ export const Contact = () => {
           >
             <div className="relative w-full h-[460px] md:h-[520px] rounded-2xl overflow-hidden">
               <iframe
-                title="Idealizeer Content Solutions Map"
-                src="https://www.google.com/maps?sca_esv=74e8f3377864fd67&rlz=1C1CFYW_en-GBIN1176IN1176&biw=1366&bih=607&output=search&q=idealizeer+content+solutions+map&source=lnms&fbs=ADc_l-byipRaccqV0jmfPhi1DgzPtklXGmVkws8Z_lBff884vwWzYGOXmwhR8m6ZBpcqcPLtbavfU3gnaK7Idtx_pmLMtWG_h03cTZ3-GPU6Ce1B4SP855I3Mot1fDQg8_oFs1TT4NQr1WSSfVKM2W1etGzgycEwF1d8WVoqXoeZWDlwWN0fjUtIE108-d51jS8liCIIUgvP_tpKUKl7JaOZnTR-DqRE2aMluxJCcUWMrYr4mApUPfg&entry=mc&ved=1t:200715&ictx=111"
+                title="Nirmal Dental Labs on Google Maps"
+                src="https://www.google.com/maps/place/Idealizeer+Content+Solutions+Private+Limited/@18.5863645,73.7360261,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bb00907081fd:0x5f1ba7f78fe527fe!8m2!3d18.5863645!4d73.738601!16s%2Fg%2F11h73lv553?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: 16 }}
